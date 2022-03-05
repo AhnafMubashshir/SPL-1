@@ -71,7 +71,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1646243959 source:d:\1. study metarials\3rd smester\spl-1\main.cpp
+1646481942 source:d:\1. study metarials\3rd smester\spl-1\main.cpp
 	"header.h"
 
 1645004241 source:d:\1. study metarials\3rd smester\spl-1\lib\inverse_matrix_initializer.cpp
@@ -109,7 +109,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1646297011 d:\1. study metarials\3rd smester\spl-1\headers\header.h
+1646481159 d:\1. study metarials\3rd smester\spl-1\headers\header.h
 	<bits/stdc++.h>
 	"constants.h"
 
@@ -132,7 +132,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1646409706 source:d:\1. study metarials\3rd smester\spl-1\lib\multiplicative_update.cpp
+1646439311 source:d:\1. study metarials\3rd smester\spl-1\lib\multiplicative_update.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -144,7 +144,10 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1646238414 source:d:\1. study metarials\3rd smester\spl-1\lib\print_matrix.cpp
+1646482078 source:d:\1. study metarials\3rd smester\spl-1\lib\print_matrix.cpp
 	<bits/stdc++.h>
+	"header.h"
+
+1646483013 source:d:\1. study metarials\3rd smester\spl-1\lib\hadamard.cpp
 	"header.h"
 

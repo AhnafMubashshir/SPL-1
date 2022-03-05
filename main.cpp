@@ -23,11 +23,16 @@ int main()
 
     double matrix1[N][N]={}, matrix2[N][N]={};
 
+    cout<<determenent(matrix, col)<<endl<<endl;
+
     //normalizing initial matrix
     matrix_normalizer(matrix, row, col);
 
+
     //initializing first factorized matrix with gaussian distribution
     gaussian_initializer(matrix1, row, colrow);
+//    hadamard(matrix1, row, colrow, colrow);
+//    hadamard(matrix2, colrow, col, colrow);
 
     //initializing second factorized matrix with gaussian distribution
     gaussian_initializer(matrix2, colrow, col);
@@ -36,7 +41,7 @@ int main()
 
     multiplicative_update(matrix, matrix1, matrix2, row, col, colrow);
 
-    print_matrix(matrix, row, col);
+    //print_matrix(matrix, row, col);
 }
 
 

@@ -9,5 +9,6 @@ void print_matrix(double matrix[][N], int row, int col)
         }
         cout<<endl;
     }
+    cout<<endl;
 }
 

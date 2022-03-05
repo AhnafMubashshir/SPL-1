@@ -16,6 +16,8 @@ double error(double mat[][N], double mat1[][N], double mat2[][N], int r1, int c,
 
 void gaussian_initializer(double mat[][N], int row, int col);
 
+void hadamard(double matrix[][N], int row, int col, int change_dimension);
+
 void inverse_matrix(double mat[][N], double inv_mat[][N], int r, int c);
 
 void matrix_normalizer(double mat[][N], int row, int col);
