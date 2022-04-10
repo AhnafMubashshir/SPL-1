@@ -11,4 +11,3 @@ void elementwise_devide_matrix(double **mat1, double **mat2, double **el_div_mat
         }
     }
 }
-

@@ -27,10 +27,9 @@ void multiplicative_update(double **mat, double **mat1, double **mat2, int row, 
                 double** temp5= new double*[k];
                 for(int i=0; i<k; i++) temp5[i]= new double[col];
 
-cout<<"..."<<endl;
+
 
                 transpose_matrix(mat1, temp, row, k); //keeps the transpose matrix of matrix-1 in temp(k*row)
-                print_matrix(mat1, k, row);
                 multiply_matrix(temp, mat, temp1, k, row, col); //keeps the multiplied matrix of temp & matrix in temp1(k*col)
 
 
@@ -114,6 +113,6 @@ cout<<"..."<<endl;
     print_matrix(mat2, k, col);
     cout<<endl;
 
-    cout<<"Total iterations: "<<cnt<<" "<<endl;
-    cout<<"Error: "<<(err*100)<<"%"<<endl;
+//    cout<<"Total iterations: "<<cnt<<" "<<endl;
+//    cout<<"Error: "<<(err*100)<<"%"<<endl;
 }

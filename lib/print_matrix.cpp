@@ -11,4 +11,3 @@ void print_matrix(double **mat, int row, int col)
     }
     cout<<endl;
 }
-

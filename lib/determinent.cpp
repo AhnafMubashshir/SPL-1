@@ -23,4 +23,3 @@ double determenent(double **res, int r, int c)
 
     return det;
 }
-

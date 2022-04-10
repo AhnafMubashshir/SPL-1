@@ -11,4 +11,3 @@ void subtract_matrix(double **mat1, double **mat2, double **subtract_mat, int r,
         }
     }
 }
-

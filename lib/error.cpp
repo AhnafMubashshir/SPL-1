@@ -21,4 +21,3 @@ double error(double **mat, double **mat1, double **mat2, int r1, int c, int c2)
 
     return sqrt(er);
 }
-

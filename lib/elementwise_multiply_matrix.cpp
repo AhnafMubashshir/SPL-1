@@ -11,4 +11,3 @@ void elementwise_multiply_matrix(double **mat1, double **mat2, double **el_mul_m
         }
     }
 }
-

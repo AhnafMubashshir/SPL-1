@@ -6,4 +6,4 @@ using namespace std;
 #define miu 9.0
 #define initial (0.398922804/sigma)
 #define INFINITE (1e9+5)
-#define N 10000000
+#define N 100
