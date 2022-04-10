@@ -16,7 +16,6 @@ int main()
     cout<<"Press '7' for Matrix Factorization."<<endl;
     cout<<endl;
 
-
     while(1){
         cout<<"Choose an option: ";
         cin>>choice;
@@ -25,14 +24,21 @@ int main()
         if(choice==1) Matrix_Addition();
         else if(choice==2) Matrix_Subtraction();
         else if(choice==3) Matrix_Multiplication();
+        else if(choice==4) Inverse_Matrix();
         else if(choice==5) Transpose_Matrix();
+        else if(choice==6) Determinant();
         else if(choice==7) Matrix_Factorization();
 
         cout<<endl;
 
         cout<<"Do you wish to continue? press 'Y' for Yes : 'N' for No: ";
-        cin>>ch;
+        while(1){
+            cin>>ch;
+            if(ch=='N' || ch=='Y') break;
+            else cout<<"Wrong choice! Please try again: ";
+        }
+        cout<<endl<<endl;
         if(ch=='N') break;
-        else cout<<endl<<"Thank You!"<<endl<<endl;
     }
+    cout<<endl<<"--------------------------------------------------Thank You!--------------------------------------------------"<<endl<<endl;
 }

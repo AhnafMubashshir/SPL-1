@@ -4,6 +4,8 @@
 using namespace std;
 
 //Action files
+void Determinant();
+void Inverse_Matrix();
 void Matrix_Addition();
 void Matrix_Factorization();
 void Matrix_Multiplication();
@@ -30,7 +32,7 @@ void gaussian_initializer(double **mat, int row, int col);
 
 void hadamard(double **mat, int row, int col, int change_dimension);
 
-void inverse_matrix(double **mat, double **inv_mat, int r, int c);
+double inverse_matrix(double **mat, double **inv_mat, int r, int c);
 
 void matrix_normalizer(double **matrix, int row, int col);
 

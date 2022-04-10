@@ -16,4 +16,5 @@ void sub_matrix_initializer(double **mat, double **sub_mat, int r, int c, int r1
         }
         k++, l=0;
     }
+//    print_matrix(sub_mat, r-1, c-1);
 }

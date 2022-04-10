@@ -1,55 +1,64 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 //Inverse matrix
-void inverse_matrix(double **mat, double **inv_mat, int r, int c)
+double inverse_matrix(double **mat, double **inv_mat, int r, int c)
 {
     int i,j, sign=1;
     double det;
 
-    double** sub_mat= new double*[r-1];
-    for(int i=0; i<c-1; i++) sub_mat[i]= new double[c-1];
+    double** sub_mat= new double*[r];
+    for(int i=0; i<r; i++) sub_mat[i]= new double[c];
 
     double** Adj_mat= new double*[r];
-    for(int i=0; i<c; i++) Adj_mat[i]= new double[c];
+    for(int i=0; i<r; i++) Adj_mat[i]= new double[c];
 
-    double** t_Adj_mat= new double*[r];
-    for(int i=0; i<c; i++) t_Adj_mat[i]= new double[c];
+    double** t_Adj_mat= new double*[c];
+    for(int i=0; i<c; i++) t_Adj_mat[i]= new double[r];
 
     double** temp= new double*[c];
-    for(int i=0; i<r; i++) temp[i]= new double[r];
+    for(int i=0; i<c; i++) temp[i]= new double[r];
 
     double** temp1= new double*[c];
     for(int i=0; i<c; i++) temp1[i]= new double[c];
 
     double** temp2= new double*[c];
-    for(int i=0; i<r; i++) temp2[i]= new double[r];
-
-    det= determenent(mat, r, c);
+    for(int i=0; i<c; i++) temp2[i]= new double[r];
 
     //using pseudo inverse
-    transpose_matrix(mat, temp, r, c);
+    transpose_matrix(mat, temp, r, c); //temp is the conjugated transpose matrix
     multiply_matrix(temp, mat, temp1, c, r, c);
 
+    det=determenent(temp1, c, c);
+
+    if(det==0) return det;
+
     //adjacence matrix
-    for(i=0;i<r;i++){
+    if(c==2){
+        t_Adj_mat[0][0]=temp1[1][1];
+        t_Adj_mat[1][1]=temp1[0][0];
+        t_Adj_mat[0][1]=-temp1[0][1];
+        t_Adj_mat[1][0]=-temp1[1][0];
+    }
+    else{
+        for(i=0;i<c;i++){
+            for(j=0;j<c;j++){
+                sub_matrix_initializer(temp1, sub_mat, c, c, i, j);
+                Adj_mat[i][j]=(sign*determenent(sub_mat, c-1, c-1));
+                sign=-sign;
+            }
+        }
+        transpose_matrix(Adj_mat, t_Adj_mat, c, c);
+    }
+
+    for(i=0;i<c;i++){
         for(j=0;j<c;j++){
-            sub_matrix_initializer(temp1, sub_mat, r, c, i, j);
-            Adj_mat[i][j]=(sign*determenent(sub_mat, r-1, c-1));
-            sign=-sign;
+            t_Adj_mat[i][j]/=det;
         }
     }
-    transpose_matrix(Adj_mat, t_Adj_mat, r, c);
-    multiply_matrix(temp, t_Adj_mat, temp2, c, c, r);
+
+    multiply_matrix(t_Adj_mat, temp, temp2, c, c, r);
 
     //inversed matrix
-    for(i=0;i<r;i++){
-        for(j=0;j<c;j++){
-            temp2[i][j]/=det;
-        }
-    }
-
     for(i=0;i<c;i++){
         for(j=0;j<r;j++){
             inv_mat[i][j]=temp2[i][j];

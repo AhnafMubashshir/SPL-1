@@ -38,7 +38,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1649588365 source:d:\1. study metarials\3rd smester\spl-1\lib\determinent.cpp
+1649600115 source:d:\1. study metarials\3rd smester\spl-1\lib\determinent.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -50,8 +50,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1649588365 source:d:\1. study metarials\3rd smester\spl-1\lib\inverse_matrix.cpp
-	<bits/stdc++.h>
+1649606417 source:d:\1. study metarials\3rd smester\spl-1\lib\inverse_matrix.cpp
 	"header.h"
 
 1645004461 source:d:\1. study metarials\3rd smester\spl-1\lib\multiply.cpp
@@ -71,7 +70,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1649591302 source:d:\1. study metarials\3rd smester\spl-1\main.cpp
+1649600454 source:d:\1. study metarials\3rd smester\spl-1\main.cpp
 	"header.h"
 
 1645004241 source:d:\1. study metarials\3rd smester\spl-1\lib\inverse_matrix_initializer.cpp
@@ -92,7 +91,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1649588365 source:d:\1. study metarials\3rd smester\spl-1\lib\sub_matrix_initializer.cpp
+1649605700 source:d:\1. study metarials\3rd smester\spl-1\lib\sub_matrix_initializer.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -109,14 +108,14 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1649590613 d:\1. study metarials\3rd smester\spl-1\headers\header.h
+1649606444 d:\1. study metarials\3rd smester\spl-1\headers\header.h
 	<bits/stdc++.h>
 	"constants.h"
 
 1649588365 d:\1. study metarials\3rd smester\spl-1\headers\constants.h
 	<bits/stdc++.h>
 
-1649588365 source:d:\1. study metarials\3rd smester\spl-1\lib\addition_matrix.cpp
+1649591329 source:d:\1. study metarials\3rd smester\spl-1\lib\addition_matrix.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -158,7 +157,7 @@
 1649590805 source:d:\1. study metarials\3rd smester\spl-1\actions\matrix_factorization.cpp
 	"header.h"
 
-1649591302 source:d:\1. study metarials\3rd smester\spl-1\actions\matrix_multiplication.cpp
+1649606417 source:d:\1. study metarials\3rd smester\spl-1\actions\matrix_multiplication.cpp
 	"header.h"
 
 1649590805 source:d:\1. study metarials\3rd smester\spl-1\actions\matrix_addition.cpp
@@ -168,5 +167,11 @@
 	"header.h"
 
 1649590863 source:d:\1. study metarials\3rd smester\spl-1\actions\transpose_matrix.cpp
+	"header.h"
+
+1649597263 source:d:\1. study metarials\3rd smester\spl-1\actions\determinant.cpp
+	"header.h"
+
+1649606444 source:d:\1. study metarials\3rd smester\spl-1\actions\inverse_matrix.cpp
 	"header.h"
 

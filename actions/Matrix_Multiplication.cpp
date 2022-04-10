@@ -15,7 +15,7 @@ void Matrix_Multiplication()
     cout<<endl;
 
     if(col1!=row2){
-        cout<<"Wrong input (Column of 1st matrix and Row of 2nd matrix must have to be same)."<<endl<<endl;
+        cout<<"::Wrong input (Column of 1st matrix and Row of 2nd matrix must have to be same)."<<endl<<endl;
         return;
     }
 
