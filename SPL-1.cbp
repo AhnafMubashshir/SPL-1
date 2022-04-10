@@ -42,6 +42,7 @@
 		<Unit filename="lib/elementwise_multiply_matrix.cpp" />
 		<Unit filename="lib/error.cpp" />
 		<Unit filename="lib/gaussian_initializer.cpp" />
+		<Unit filename="lib/hadamard.cpp" />
 		<Unit filename="lib/inverse_matrix.cpp" />
 		<Unit filename="lib/matrix_normalizer.cpp" />
 		<Unit filename="lib/multiplicative_update.cpp" />

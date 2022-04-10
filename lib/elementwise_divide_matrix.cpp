@@ -3,7 +3,7 @@
 using namespace std;
 
 //Transpose Matrix
-void elementwise_devide_matrix(double mat1[][N], double mat2[][N], double el_div_mat[][N], int r, int c)
+void elementwise_devide_matrix(double **mat1, double **mat2, double **el_div_mat, int r, int c)
 {
     for(int i=0;i<r; i++){
         for(int j=0;j<c;j++){

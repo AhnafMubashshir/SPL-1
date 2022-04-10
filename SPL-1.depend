@@ -38,11 +38,11 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1645125642 source:d:\1. study metarials\3rd smester\spl-1\lib\determinent.cpp
+1649581719 source:d:\1. study metarials\3rd smester\spl-1\lib\determinent.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1645125713 source:d:\1. study metarials\3rd smester\spl-1\lib\error.cpp
+1649580187 source:d:\1. study metarials\3rd smester\spl-1\lib\error.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -50,7 +50,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1645125696 source:d:\1. study metarials\3rd smester\spl-1\lib\inverse_matrix.cpp
+1649580187 source:d:\1. study metarials\3rd smester\spl-1\lib\inverse_matrix.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -63,7 +63,7 @@
 	"constants.h"
 	"header.h"
 
-1645125799 source:d:\1. study metarials\3rd smester\spl-1\lib\sd.cpp
+1649580187 source:d:\1. study metarials\3rd smester\spl-1\lib\sd.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -71,14 +71,14 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1646481942 source:d:\1. study metarials\3rd smester\spl-1\main.cpp
+1649583943 source:d:\1. study metarials\3rd smester\spl-1\main.cpp
 	"header.h"
 
 1645004241 source:d:\1. study metarials\3rd smester\spl-1\lib\inverse_matrix_initializer.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1645125650 source:d:\1. study metarials\3rd smester\spl-1\lib\matrix_normalizer.cpp
+1649581704 source:d:\1. study metarials\3rd smester\spl-1\lib\matrix_normalizer.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -88,15 +88,15 @@
 1644950871 d:\1. study metarials\3rd smester\spl-1\head\constants.h
 	<bits/stdc++.h>
 
-1645125812 source:d:\1. study metarials\3rd smester\spl-1\lib\gaussian_initializer.cpp
+1649583894 source:d:\1. study metarials\3rd smester\spl-1\lib\gaussian_initializer.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1645125756 source:d:\1. study metarials\3rd smester\spl-1\lib\sub_matrix_initializer.cpp
+1649580187 source:d:\1. study metarials\3rd smester\spl-1\lib\sub_matrix_initializer.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1645125775 source:d:\1. study metarials\3rd smester\spl-1\lib\multiply_matrix.cpp
+1649577936 source:d:\1. study metarials\3rd smester\spl-1\lib\multiply_matrix.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -105,34 +105,34 @@
 	"constants.h"
 	"header.h"
 
-1645125787 source:d:\1. study metarials\3rd smester\spl-1\lib\transpose_matrix.cpp
+1649584625 source:d:\1. study metarials\3rd smester\spl-1\lib\transpose_matrix.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1646481159 d:\1. study metarials\3rd smester\spl-1\headers\header.h
+1649581630 d:\1. study metarials\3rd smester\spl-1\headers\header.h
 	<bits/stdc++.h>
 	"constants.h"
 
-1645125936 d:\1. study metarials\3rd smester\spl-1\headers\constants.h
+1649582621 d:\1. study metarials\3rd smester\spl-1\headers\constants.h
 	<bits/stdc++.h>
 
-1646312777 source:d:\1. study metarials\3rd smester\spl-1\lib\addition_matrix.cpp
-	<bits/stdc++.h>
-	"header.h"
-
-1646297011 source:d:\1. study metarials\3rd smester\spl-1\lib\substract_matrix.cpp
+1649581630 source:d:\1. study metarials\3rd smester\spl-1\lib\addition_matrix.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1645125844 source:d:\1. study metarials\3rd smester\spl-1\lib\elementwise_divide_matrix.cpp
+1649580187 source:d:\1. study metarials\3rd smester\spl-1\lib\substract_matrix.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1645125844 source:d:\1. study metarials\3rd smester\spl-1\lib\elementwise_multiply_matrix.cpp
+1649581704 source:d:\1. study metarials\3rd smester\spl-1\lib\elementwise_divide_matrix.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1646439311 source:d:\1. study metarials\3rd smester\spl-1\lib\multiplicative_update.cpp
+1649580187 source:d:\1. study metarials\3rd smester\spl-1\lib\elementwise_multiply_matrix.cpp
+	<bits/stdc++.h>
+	"header.h"
+
+1649584481 source:d:\1. study metarials\3rd smester\spl-1\lib\multiplicative_update.cpp
 	<bits/stdc++.h>
 	"header.h"
 
@@ -140,14 +140,18 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1646238414 source:d:\1. study metarials\3rd smester\spl-1\lib\copy_mat.cpp
+1649581662 source:d:\1. study metarials\3rd smester\spl-1\lib\copy_mat.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1646482078 source:d:\1. study metarials\3rd smester\spl-1\lib\print_matrix.cpp
+1649580187 source:d:\1. study metarials\3rd smester\spl-1\lib\print_matrix.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1646483013 source:d:\1. study metarials\3rd smester\spl-1\lib\hadamard.cpp
+1649580187 source:d:\1. study metarials\3rd smester\spl-1\lib\hadamard.cpp
 	"header.h"
+
+1649558143 d:\1. study metarials\3rd smester\spl-1\headers\variables.h
+	<bits/stdc++.h>
+	"constants.h"
 

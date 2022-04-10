@@ -2,7 +2,7 @@
 #include "header.h"
 using namespace std;
 
-void matrix_normalizer(double mat[][N], int row, int col)
+void matrix_normalizer(double **mat, int row, int col)
 {
     double SD=sd(mat, row, col);
 

@@ -2,7 +2,7 @@
 #include "header.h"
 using namespace std;
 
-void add_matrix(double mat1[][N], double mat2[][N], double add_mat[][N], int r, int c)
+void add_matrix(double **mat1, double **mat2, double **add_mat, int r, int c)
 {
     for(int i=0;i<r; i++){
         for(int j=0;j<c;j++){

@@ -3,13 +3,17 @@ using namespace std;
 
 int main()
 {
-    double matrix[N][N]={};
     int row,col,colrow,i,j;
+
+//    freopen("test.txt", "r", stdin);
 
     //Taking input
     cout<<"Enter matrix row & column: ";
     cin>>row>>col;
     cout<<endl;
+
+    double** matrix=new double*[row];
+    for(int i=0; i<row; i++) matrix[i]= new double[col];
 
     cout<<"Enter the matrix: "<<endl;
     for(i=0;i<row;i++){
@@ -17,25 +21,34 @@ int main()
     }
     cout<<endl;
 
+//    print_matrix(matrix, row, col);
+
     cout<<"Enter new matrix row & column: ";
     cin>>colrow;
     cout<<endl;
 
-    double matrix1[N][N]={}, matrix2[N][N]={};
+    double** matrix1=new double*[row];
+    double** matrix2=new double*[colrow];
 
-    cout<<determenent(matrix, col)<<endl<<endl;
+    for(int i=0; i<row; i++) matrix1[i]= new double[colrow];
+    for(int i=0; i<colrow; i++) matrix2[i]= new double[col];
+
+    //cout<<determenent(matrix, row, col)<<endl<<endl;
 
     //normalizing initial matrix
     matrix_normalizer(matrix, row, col);
 
+//    print_matrix(matrix, row, col);
+
 
     //initializing first factorized matrix with gaussian distribution
-    gaussian_initializer(matrix1, row, colrow);
+    gaussian_initializer(matrix2, colrow, col);
 //    hadamard(matrix1, row, colrow, colrow);
 //    hadamard(matrix2, colrow, col, colrow);
 
     //initializing second factorized matrix with gaussian distribution
-    gaussian_initializer(matrix2, colrow, col);
+    gaussian_initializer(matrix1, row, colrow);
+
 
 
 

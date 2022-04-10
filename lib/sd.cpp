@@ -3,7 +3,7 @@
 using namespace std;
 
 //Calculating SD of main matrix
-double sd(double mat[][N], int r, int c)
+double sd(double **mat, int r, int c)
 {
     double add=0, avg, sd=0;
 
