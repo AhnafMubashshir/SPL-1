@@ -71,4 +71,5 @@ double inverse_matrix(double **mat, double **inv_mat, int r, int c)
     delete[] temp;
     delete[] temp1;
     delete[] temp2;
+return 1;
 }
