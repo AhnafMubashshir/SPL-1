@@ -1,3 +1,4 @@
+
 #pragma once
 #include<bits/stdc++.h>
 #include "constants.h"
@@ -30,7 +31,7 @@ void factorize_matrix();
 
 void gaussian_initializer(double **mat, int row, int col);
 
-void hadamard(double **mat, int row, int col, int change_dimension);
+void hadamard(double **mat, int row, int col);
 
 double inverse_matrix(double **mat, double **inv_mat, int r, int c);
 

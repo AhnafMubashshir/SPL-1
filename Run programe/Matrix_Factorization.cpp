@@ -36,15 +36,18 @@ void Matrix_Factorization()
     //normalizing initial matrix
     matrix_normalizer(matrix, row, col);
 
+    cout<<"Normalized matirx: "<<endl;
     print_matrix(matrix, row, col);
 
 
     //initializing first factorized matrix with gaussian distribution
-    gaussian_initializer(matrix2, colrow, col);
-
+    //gaussian_initializer(matrix1, row, colrow);
+    hadamard(matrix1, row, colrow);
 
     //initializing second factorized matrix with gaussian distribution
-    gaussian_initializer(matrix1, row, colrow);
+    //gaussian_initializer(matrix2, colrow, col);
+    hadamard(matrix2, colrow, col);
+
 
     //Multiplicative update for factorizing
     multiplicative_update(matrix, matrix1, matrix2, row, col, colrow);
