@@ -4,10 +4,12 @@
 void multiplicative_update(double **mat, double **mat1, double **mat2, int row, int col, int k)
 {
     double err=error(mat , mat1, mat2, row, k, col);
-    int cnt;
+    int cnt=0;
+
+    double new_err=0, old_err= INFINITE;
 
     for(int i=2;;i++){
-        if((err<=-0.05 || err>=0.05)){
+        if((epsilon_MU<=-0.05 || epsilon_MU>=0.05)){
             if(i%2==0){
                 double** temp= new double*[k];
                 for(int i=0; i<k; i++) temp[i]= new double[row];
@@ -39,9 +41,14 @@ void multiplicative_update(double **mat, double **mat1, double **mat2, int row, 
                 elementwise_devide_matrix(temp1, temp3, temp4, k, col);
                 elementwise_multiply_matrix(mat2, temp4, temp5, k, col);
 
-                err= error(mat , mat1, temp5, row, k, col);
+                new_err= error(mat , mat1, temp5, row, k, col);
+
+                if(fabs(old_err-new_err)<epsilon_Err_Check) break;
+                else if(old_err==new_err) break;
 
                 copy_matrix(mat2, temp5, k, col);
+
+                old_err= new_err;
 
                 delete[] temp;
                 delete[] temp1;
@@ -82,9 +89,15 @@ void multiplicative_update(double **mat, double **mat1, double **mat2, int row, 
                 elementwise_multiply_matrix(mat1, temp4, temp5, row, k);
 
 
-                err= error(mat , temp5, mat2, row, k, col);
+                new_err= error(mat , temp5, mat2, row, k, col);
+
+                if(fabs(old_err-new_err)<epsilon_Err_Check) break;
+                else if(old_err==new_err) break;
 
                 copy_matrix(mat1, temp5, row, k);
+
+                old_err=new_err;
+
                 delete[] temp;
                 delete[] temp1;
                 delete[] temp2;
@@ -94,7 +107,6 @@ void multiplicative_update(double **mat, double **mat1, double **mat2, int row, 
 
                 //cout<<"----------------Changing mat-1----------------"<<endl;
             }
-            cnt++;
         }
         else break;
     }

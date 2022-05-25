@@ -29,8 +29,16 @@ double inverse_matrix(double **mat, double **inv_mat, int r, int c)
     multiply_matrix(temp, mat, temp1, c, r, c);
 
     det=determenent(temp1, c, c);
+    if(det==0){
+        delete[] sub_mat;
+        delete[] Adj_mat;
+        delete[] t_Adj_mat;
+        delete[] temp;
+        delete[] temp1;
+        delete[] temp2;
 
-    if(det==0) return det;
+        return det;
+    }
 
     //adjacence matrix
     if(c==2){
