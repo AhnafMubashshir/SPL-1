@@ -16,14 +16,13 @@ void hadamard(double **mat, int row, int col)
 
 
     double** H= new double*[HrowCol];
-        for(int i=0; i<HrowCol; i++) H[i]= new double[HrowCol];
+    for(int i=0; i<HrowCol; i++) H[i]= new double[HrowCol];
 
 
     H[0][0]=1;
 
     int i1=1;
 
-    cout<<"Entering to create Hadamard matrix."<<endl;
     while(i1<HrowCol){
         for(int i2=0; i2<i1; i2++){
             for(int i3=0; i3<i1; i3++){
@@ -34,8 +33,6 @@ void hadamard(double **mat, int row, int col)
         }
         i1+=i1;
     }
-    cout<<"Hadamard Matrix created."<<endl;
-//    print_matrix(H, row, col);
 
 
     for(int i=0; i<row; i++){
