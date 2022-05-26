@@ -4,10 +4,12 @@ using namespace std;
 
 double error(double **mat, double **mat1, double **mat2, int r1, int c, int c2)
 {
+//    cout<<"..."<<endl;
     double** result= new double*[r1];
-    for(int i=0; i<c2; i++) result[i]= new double[c2];
+    for(int i=0; i<r1; i++) result[i]= new double[c2];
 
     multiply_matrix(mat1, mat2, result, r1, c, c2);
+//    print_matrix(result, r1, c2);
 
     double er=0;
 

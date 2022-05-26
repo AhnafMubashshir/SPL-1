@@ -53,6 +53,7 @@
 		<Unit filename="lib/gaussian_initializer.cpp" />
 		<Unit filename="lib/hadamard.cpp" />
 		<Unit filename="lib/inverse_matrix.cpp" />
+		<Unit filename="lib/make_abs_mat.cpp" />
 		<Unit filename="lib/matrix_normalizer.cpp" />
 		<Unit filename="lib/multiplicative_update.cpp" />
 		<Unit filename="lib/multiply_matrix.cpp" />

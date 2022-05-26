@@ -38,6 +38,8 @@ void hadamard(double **mat, int row, int col);
 
 double inverse_matrix(double **mat, double **inv_mat, int r, int c);
 
+void make_abs_mat(double **mat, int row, int col);
+
 void matrix_normalizer(double **matrix, int row, int col);
 
 void multiplicative_update(double **mat, double **mat1, double **mat2, int row, int col, int k);

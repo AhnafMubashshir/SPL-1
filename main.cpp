@@ -14,24 +14,58 @@ int main()
     cout<<"Press '6' for Determinant of Matrix."<<endl;
     cout<<"Press '7' for Matrix Factorization."<<endl;
     cout<<"Press '8' for Linear Equation Solving."<<endl;
-    cout<<"Type 'exit' to terminate."<<endl;
+//    cout<<"Type 'exit' to terminate."<<endl;
     cout<<endl;
 
     while(1){
         cout<<"Choose an option or type 'exit' to terminate: ";
-        cin>>ch;
-        cout<<endl;
 
-        if(ch=="exit") break;
+        while(1){
+            cin>>ch;
+            cout<<endl;
 
-        if(ch=="1") Matrix_Addition();
-        else if(ch=="2") Matrix_Subtraction();
-        else if(ch=="3") Matrix_Multiplication();
-        else if(ch=="4") Inverse_Matrix();
-        else if(ch=="5") Transpose_Matrix();
-        else if(ch=="6") Determinant();
-        else if(ch=="7") Matrix_Factorization();
-        else if(ch=="8") Solve_Linear_Equation();
+            if(ch=="exit"){
+                cout<<endl<<"--------------------------------------------------Thank You!--------------------------------------------------"<<endl<<endl;
+                return 0;
+            }
+
+            if(ch=="1"){
+                Matrix_Addition();
+                break;
+            }
+            else if(ch=="2"){
+                Matrix_Subtraction();
+                break;
+            }
+            else if(ch=="3"){
+                Matrix_Multiplication();
+                break;
+            }
+            else if(ch=="4"){
+                Inverse_Matrix();
+                break;
+            }
+            else if(ch=="5"){
+                Transpose_Matrix();
+                break;
+            }
+            else if(ch=="6"){
+                Determinant();
+                break;
+            }
+            else if(ch=="7"){
+                Matrix_Factorization();
+                break;
+            }
+            else if(ch=="8"){
+                Solve_Linear_Equation();
+                break;
+            }
+            else{
+                cout<<"Wrong choice! Please try again: ";
+                continue;
+            }
+        }
 
         cout<<endl;
 
