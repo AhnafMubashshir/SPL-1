@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 #include "header.h"
 
 void gauss_seidel(double **co_efficient_mat, double *right_hand_side_mat, int variables)

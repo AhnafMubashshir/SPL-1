@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 #include "header.h"
 
 void print_matrix(double **mat, int row, int col)

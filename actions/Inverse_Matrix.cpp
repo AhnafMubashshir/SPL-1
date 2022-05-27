@@ -1,12 +1,21 @@
 #include "header.h"
 
-void Inverse_Matrix()
+int Inverse_Matrix()
 {
     cout<<"#Inverse Matrix"<<endl<<endl;
     int row, col;
+    string str;
 
+    //dimension input
     cout<<"Enter row & column of the matrix: ";
-    cin>>row>>col;
+    cin>>str;
+    if(str=="exit") return 0;
+    else if(str=="back") return 1;
+    row= stoi(str);
+    cin>>str;
+    if(str=="exit") return 0;
+    else if(str=="back") return 1;
+    col= stoi(str);
     cout<<endl;
 
 
@@ -17,7 +26,10 @@ void Inverse_Matrix()
     cout<<"Enter The matrix: "<<endl;
     for(int i=0; i<row; i++){
         for(int j=0; j<col; j++){
-            cin>>matrix[i][j];
+            cin>>str;
+            if(str=="exit") return 0;
+            else if(str=="back") return 1;
+            matrix[i][j]=stoi(str);
         }
     }
     cout<<endl;
@@ -28,7 +40,7 @@ void Inverse_Matrix()
     double det= inverse_matrix(matrix, result, row, col);
     if(det==0){
         cout<<"::Could not find Inverse. (determinant is 0)."<<endl<<endl;
-        return;
+        return 1;
     }
 
     cout<<"The Inverse Matrix is: "<<endl;
@@ -37,4 +49,6 @@ void Inverse_Matrix()
 
     delete[] matrix;
     delete[] result;
+
+    return 2;
 }

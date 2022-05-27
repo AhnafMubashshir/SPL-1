@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 #include "header.h"
 
 void multiplicative_update_for_low_colrow(double **mat, double **mat1, double **mat2, int row, int col, int k)

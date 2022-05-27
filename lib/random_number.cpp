@@ -1,7 +1,4 @@
-#include<bits/stdc++.h>
-#include "constants.h"
 #include "header.h"
-using namespace std;
 
 // Generating random number with gaussian rule
 double randfrom(double minn, double maxx)

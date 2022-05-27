@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 void matrix_normalizer(double **mat, int row, int col)
 {

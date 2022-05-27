@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 //Transpose Matrix
 void transpose_matrix(double **mat, double **transpose_mat, int r, int c)

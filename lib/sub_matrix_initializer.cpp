@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 void sub_matrix_initializer(double **mat, double **sub_mat, int r, int c, int r1, int c1)
 {

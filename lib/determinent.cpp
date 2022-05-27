@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 double determenent(double **res, int r, int c)
 {

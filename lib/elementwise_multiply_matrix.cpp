@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 //Transpose Matrix
 void elementwise_multiply_matrix(double **mat1, double **mat2, double **el_mul_mat, int r, int c)

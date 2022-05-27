@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 #include"header.h"
 
 void copy_matrix(double **mat1, double **mat2, int row, int col)

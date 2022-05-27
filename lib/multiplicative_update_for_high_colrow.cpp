@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 #include "header.h"
 
 void multiplicative_update_for_high_colrow(double **mat, double **mat1, double **mat2, int row, int col, int k)
@@ -120,7 +119,7 @@ void multiplicative_update_for_high_colrow(double **mat, double **mat1, double *
                 delete[] temp4;
                 delete[] temp5;
 
-                cout<<"----------------Changed mat-1----------------error: "<<err<<endl;
+//                cout<<"----------------Changed mat-1----------------error: "<<err<<endl;
 
 //                cout<<"Factorized matrices: "<<endl<<endl;
 //

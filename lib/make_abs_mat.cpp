@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 #include "header.h"
 
 void make_abs_mat(double **mat, int row, int col){

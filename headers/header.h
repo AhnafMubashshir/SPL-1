@@ -1,18 +1,18 @@
-
 #pragma once
 #include<bits/stdc++.h>
+#include<algorithm>
 #include "constants.h"
 using namespace std;
 
 //Action files
-void Determinant();
-void Inverse_Matrix();
-void Matrix_Addition();
-void Matrix_Factorization();
-void Matrix_Multiplication();
-void Matrix_Subtraction();
-void Solve_Linear_Equation();
-void Transpose_Matrix();
+int Determinant();
+int Inverse_Matrix();
+int Matrix_Addition();
+int Matrix_Factorization();
+int Matrix_Multiplication();
+int Matrix_Subtraction();
+int Solve_Linear_Equation();
+int Transpose_Matrix();
 
 
 //Library files

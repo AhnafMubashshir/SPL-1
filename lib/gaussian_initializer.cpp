@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 void gaussian_initializer(double **mat, int row, int col)
 {

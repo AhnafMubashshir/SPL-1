@@ -1,9 +1,9 @@
 #include "header.h"
-using namespace std;
 
 int main()
 {
     string ch;
+    int opt;
 
     while(1){
         cout<<"Options: "<<endl;
@@ -27,35 +27,35 @@ int main()
             }
 
             if(ch=="1"){
-                Matrix_Addition();
+                opt= Matrix_Addition();
                 break;
             }
             else if(ch=="2"){
-                Matrix_Subtraction();
+                opt= Matrix_Subtraction();
                 break;
             }
             else if(ch=="3"){
-                Matrix_Multiplication();
+                opt=Matrix_Multiplication();
                 break;
             }
             else if(ch=="4"){
-                Inverse_Matrix();
+                opt =Inverse_Matrix();
                 break;
             }
             else if(ch=="5"){
-                Transpose_Matrix();
+                opt= Transpose_Matrix();
                 break;
             }
             else if(ch=="6"){
-                Determinant();
+                opt= Determinant();
                 break;
             }
             else if(ch=="7"){
-                Matrix_Factorization();
+                opt= Matrix_Factorization();
                 break;
             }
             else if(ch=="8"){
-                Solve_Linear_Equation();
+                opt= Solve_Linear_Equation();
                 break;
             }
             else{
@@ -63,8 +63,10 @@ int main()
                 continue;
             }
         }
-
         cout<<endl;
+
+        if(opt==0) break;
+        if(opt==1) continue;
 
         cout<<"Do you wish to continue? press 'Y' for Yes | 'N' for No | 'exit' to terminate: ";
         while(1){
@@ -73,8 +75,7 @@ int main()
             else cout<<"Wrong choice! Please try again: ";
         }
         cout<<endl<<endl;
-        if(ch=="n" || ch=="N") break;
-        else if(ch=="exit") break;
+        if(ch=="n" || ch=="N" || ch=="exit") break;
     }
     cout<<endl<<"--------------------------------------------------Thank You!--------------------------------------------------"<<endl<<endl;
 }

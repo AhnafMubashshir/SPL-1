@@ -1,12 +1,21 @@
 #include "header.h"
 
-void Transpose_Matrix()
+int Transpose_Matrix()
 {
     cout<<"#Transpose Matrix"<<endl<<endl;
     int row, col;
+    string str;
 
+    //dimension input
     cout<<"Enter row & column of the matrix: ";
-    cin>>row>>col;
+    cin>>str;
+    if(str=="exit") return 0;
+    else if(str=="back") return 1;
+    row= stoi(str);
+    cin>>str;
+    if(str=="exit") return 0;
+    else if(str=="back") return 1;
+    col= stoi(str);
     cout<<endl;
 
 
@@ -17,7 +26,10 @@ void Transpose_Matrix()
     cout<<"Enter The matrix: "<<endl;
     for(int i=0; i<row; i++){
         for(int j=0; j<col; j++){
-            cin>>matrix[i][j];
+            cin>>str;
+            if(str=="exit") return 0;
+            else if(str=="back") return 1;
+            matrix[i][j]=stoi(str);
         }
     }
     cout<<endl;
@@ -33,4 +45,6 @@ void Transpose_Matrix()
 
     delete[] matrix;
     delete[] T_matrix;
+
+    return 2;
 }

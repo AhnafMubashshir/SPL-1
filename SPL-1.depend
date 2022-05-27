@@ -271,54 +271,48 @@
 1649607019 source:/home/a2s/Documents/Spl/SPL-1-main/main.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\actions\matrix_addition.cpp
+1653684352 source:d:\spl\spl-1\actions\matrix_addition.cpp
 	"header.h"
 
-1653661343 d:\spl\spl-1\headers\header.h
+1653684352 d:\spl\spl-1\headers\header.h
 	<bits/stdc++.h>
+	<algorithm>
 	"constants.h"
 
-1653501830 d:\spl\spl-1\headers\constants.h
+1653679115 d:\spl\spl-1\headers\constants.h
 	<bits/stdc++.h>
 
-1653662541 source:d:\spl\spl-1\actions\matrix_factorization.cpp
+1653681205 source:d:\spl\spl-1\actions\matrix_factorization.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\actions\matrix_multiplication.cpp
+1653684352 source:d:\spl\spl-1\actions\matrix_multiplication.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\actions\matrix_subtraction.cpp
+1653683035 source:d:\spl\spl-1\actions\matrix_subtraction.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\actions\transpose_matrix.cpp
+1653684352 source:d:\spl\spl-1\actions\transpose_matrix.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\addition_matrix.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\addition_matrix.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\copy_mat.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\copy_mat.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\determinent.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\determinent.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\elementwise_divide_matrix.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\elementwise_divide_matrix.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\elementwise_multiply_matrix.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\elementwise_multiply_matrix.cpp
 	"header.h"
 
-1653585179 source:d:\spl\spl-1\lib\error.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\error.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\gaussian_initializer.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\gaussian_initializer.cpp
 	"header.h"
 
 1653592267 source:d:\spl\spl-1\lib\hadamard.cpp
@@ -327,68 +321,55 @@
 1653495238 source:d:\spl\spl-1\lib\inverse_matrix.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\matrix_normalizer.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\matrix_normalizer.cpp
 	"header.h"
 
 1653587391 source:d:\spl\spl-1\lib\multiplicative_update.cpp
 	<bits/stdc++.h>
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\multiply_matrix.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\multiply_matrix.cpp
 	"header.h"
 
-1653568352 source:d:\spl\spl-1\lib\print_matrix.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\print_matrix.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\random_number.cpp
-	<bits/stdc++.h>
-	"constants.h"
+1653669064 source:d:\spl\spl-1\lib\random_number.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\sd.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\sd.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\sub_matrix_initializer.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\sub_matrix_initializer.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\substract_matrix.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\substract_matrix.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\lib\transpose_matrix.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\transpose_matrix.cpp
 	"header.h"
 
-1653663035 source:d:\spl\spl-1\main.cpp
+1653681570 source:d:\spl\spl-1\main.cpp
 	"header.h"
 
-1653324532 source:d:\spl\spl-1\actions\determinant.cpp
+1653683035 source:d:\spl\spl-1\actions\determinant.cpp
 	"header.h"
 
-1653500028 source:d:\spl\spl-1\actions\inverse_matrix.cpp
+1653683035 source:d:\spl\spl-1\actions\inverse_matrix.cpp
 	"header.h"
 
 1653500951 source:d:\spl\spl-1\actions\solve_linear_equation.cpp
 	"header.h"
 
-1653501865 source:d:\spl\spl-1\lib\gauss_seidel.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\gauss_seidel.cpp
 	"header.h"
 
-1653587106 source:d:\spl\spl-1\lib\make_abs_mat.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\make_abs_mat.cpp
 	"header.h"
 
-1653661951 source:d:\spl\spl-1\lib\multiplicative_update_for_low_colrow.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\multiplicative_update_for_low_colrow.cpp
 	"header.h"
 
-1653662760 source:d:\spl\spl-1\lib\multiplicative_update_for_high_colrow.cpp
-	<bits/stdc++.h>
+1653669064 source:d:\spl\spl-1\lib\multiplicative_update_for_high_colrow.cpp
 	"header.h"
 

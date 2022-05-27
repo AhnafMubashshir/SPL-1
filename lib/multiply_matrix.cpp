@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 //Multiplying matrices
 void multiply_matrix(double **mat1, double **mat2, double **res, int r1, int c, int c2)

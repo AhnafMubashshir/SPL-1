@@ -1,12 +1,21 @@
 #include "header.h"
 
-void Matrix_Addition(){
+int Matrix_Addition(){
     cout<<"#Matrix Addition"<<endl<<endl;
 
     int row, col;
+    string str;
 
-    cout<<"Enter row & column of the matrices: ";
-    cin>>row>>col;
+    //dimension input
+    cout<<"Enter row & column of the matrix: ";
+    cin>>str;
+    if(str=="exit") return 0;
+    else if(str=="back") return 1;
+    row= stoi(str);
+    cin>>str;
+    if(str=="exit") return 0;
+    else if(str=="back") return 1;
+    col= stoi(str);
     cout<<endl;
 
 
@@ -17,7 +26,10 @@ void Matrix_Addition(){
     cout<<"Enter 1st matrix: "<<endl;
     for(int i=0; i<row; i++){
         for(int j=0; j<col; j++){
-            cin>>matrix1[i][j];
+            cin>>str;
+            if(str=="exit") return 0;
+            else if(str=="back") return 1;
+            matrix1[i][j]=stoi(str);
         }
     }
     cout<<endl;
@@ -31,7 +43,10 @@ void Matrix_Addition(){
     cout<<"Enter 2nd matrix: "<<endl;
     for(int i=0;i<row;i++){
         for(int j=0;j<col;j++){
-            cin>>matrix2[i][j];
+            cin>>str;
+            if(str=="exit") return 0;
+            else if(str=="back") return 1;
+            matrix2[i][j]=stoi(str);
         }
     }
     cout<<endl;
@@ -48,4 +63,6 @@ void Matrix_Addition(){
     delete[] matrix1;
     delete[] matrix2;
     delete[] result;
+
+    return 2;
 }

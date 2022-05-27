@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 void add_matrix(double **mat1, double **mat2, double **add_mat, int r, int c)
 {

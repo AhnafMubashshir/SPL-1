@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 //Calculating SD of main matrix
 double sd(double **mat, int r, int c)

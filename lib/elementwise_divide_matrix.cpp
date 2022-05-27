@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "header.h"
-using namespace std;
 
 //Transpose Matrix
 void elementwise_devide_matrix(double **mat1, double **mat2, double **el_div_mat, int r, int c)
