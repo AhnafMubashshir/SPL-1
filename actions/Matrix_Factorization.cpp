@@ -69,19 +69,47 @@ void Matrix_Factorization()
     matrix_normalizer(matrix, row, col);
 
     //initializing first factorized matrix with gaussian distribution
-//    gaussian_initializer(matrix1, row, colrow);
-    hadamard(matrix1, row, colrow);
-    make_abs_mat(matrix1, row, colrow);
-//    print_matrix(matrix1, row, colrow);
+    cout<<"How you want the initialization of the factorized matrices?"<<endl;
+    cout<<"Press '1' for Gaussian Initialization."<<endl;
+    cout<<"Press '2' for Hadmard Initialization."<<endl<<endl;
+    cout<<"Choose an option: ";
 
+    while(1){
+        cin>>str;
 
-    //initializing second factorized matrix with gaussian distribution
-//    gaussian_initializer(matrix2, colrow, col);
-    hadamard(matrix2, colrow, col);
-    make_abs_mat(matrix2, colrow, col);
+        if(str=="1"){
+            gaussian_initializer(matrix1, row, colrow);
 
-    //Multiplicative update for factorizing
-    multiplicative_update(matrix, matrix1, matrix2, row, col, colrow);
+            gaussian_initializer(matrix2, colrow, col);
+
+            cout<<endl<<endl;
+
+            //Multiplicative update for factorizing
+            if(colrow<row || colrow<col) multiplicative_update_for_low_colrow(matrix, matrix1, matrix2, row, col, colrow);
+            else multiplicative_update_for_high_colrow(matrix, matrix1, matrix2, row, col, colrow);
+
+            break;
+
+        }
+        else if(str=="2"){
+
+            hadamard(matrix1, row, colrow);
+            make_abs_mat(matrix1, row, colrow);
+
+            hadamard(matrix2, colrow, col);
+            make_abs_mat(matrix2, colrow, col);
+
+            cout<<endl<<endl;
+
+            multiplicative_update_for_low_colrow(matrix, matrix1, matrix2, row, col, colrow);
+
+            break;
+        }
+        else{
+            cout<<"Wrong choice! Please try again: ";
+            continue;
+        }
+    }
 
     delete[] matrix;
     delete[] matrix1;

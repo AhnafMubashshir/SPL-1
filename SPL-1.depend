@@ -274,14 +274,14 @@
 1653324532 source:d:\spl\spl-1\actions\matrix_addition.cpp
 	"header.h"
 
-1653587106 d:\spl\spl-1\headers\header.h
+1653661343 d:\spl\spl-1\headers\header.h
 	<bits/stdc++.h>
 	"constants.h"
 
 1653501830 d:\spl\spl-1\headers\constants.h
 	<bits/stdc++.h>
 
-1653588133 source:d:\spl\spl-1\actions\matrix_factorization.cpp
+1653662541 source:d:\spl\spl-1\actions\matrix_factorization.cpp
 	"header.h"
 
 1653324532 source:d:\spl\spl-1\actions\matrix_multiplication.cpp
@@ -321,7 +321,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1653583977 source:d:\spl\spl-1\lib\hadamard.cpp
+1653592267 source:d:\spl\spl-1\lib\hadamard.cpp
 	"header.h"
 
 1653495238 source:d:\spl\spl-1\lib\inverse_matrix.cpp
@@ -364,7 +364,7 @@
 	<bits/stdc++.h>
 	"header.h"
 
-1653590243 source:d:\spl\spl-1\main.cpp
+1653663035 source:d:\spl\spl-1\main.cpp
 	"header.h"
 
 1653324532 source:d:\spl\spl-1\actions\determinant.cpp
@@ -381,6 +381,14 @@
 	"header.h"
 
 1653587106 source:d:\spl\spl-1\lib\make_abs_mat.cpp
+	<bits/stdc++.h>
+	"header.h"
+
+1653661951 source:d:\spl\spl-1\lib\multiplicative_update_for_low_colrow.cpp
+	<bits/stdc++.h>
+	"header.h"
+
+1653662760 source:d:\spl\spl-1\lib\multiplicative_update_for_high_colrow.cpp
 	<bits/stdc++.h>
 	"header.h"
 

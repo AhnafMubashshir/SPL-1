@@ -42,7 +42,9 @@ void make_abs_mat(double **mat, int row, int col);
 
 void matrix_normalizer(double **matrix, int row, int col);
 
-void multiplicative_update(double **mat, double **mat1, double **mat2, int row, int col, int k);
+void multiplicative_update_for_high_colrow(double **mat, double **mat1, double **mat2, int row, int col, int k);
+
+void multiplicative_update_for_low_colrow(double **mat, double **mat1, double **mat2, int row, int col, int k);
 
 void multiply_matrix(double **mat1, double **mat2, double **res, int r1, int c, int c2);
 

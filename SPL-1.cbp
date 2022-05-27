@@ -55,7 +55,8 @@
 		<Unit filename="lib/inverse_matrix.cpp" />
 		<Unit filename="lib/make_abs_mat.cpp" />
 		<Unit filename="lib/matrix_normalizer.cpp" />
-		<Unit filename="lib/multiplicative_update.cpp" />
+		<Unit filename="lib/multiplicative_update_for_high_colrow.cpp" />
+		<Unit filename="lib/multiplicative_update_for_low_colrow.cpp" />
 		<Unit filename="lib/multiply_matrix.cpp" />
 		<Unit filename="lib/print_matrix.cpp" />
 		<Unit filename="lib/random_number.cpp" />

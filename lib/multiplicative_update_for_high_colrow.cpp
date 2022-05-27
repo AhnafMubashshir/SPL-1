@@ -1,15 +1,12 @@
 #include<bits/stdc++.h>
 #include "header.h"
 
-void multiplicative_update(double **mat, double **mat1, double **mat2, int row, int col, int k)
+void multiplicative_update_for_high_colrow(double **mat, double **mat1, double **mat2, int row, int col, int k)
 {
     double err=error(mat , mat1, mat2, row, k, col);
-    int cnt=0;
-
-    double new_err=0, old_err= INFINITE;
 
     for(int i=2;;i++){
-        if((epsilon_MU<=-0.05 || epsilon_MU>=0.05)){
+        if((abs(err)>epsilon_MU)){
             if(i%2==0){
                 double** temp= new double*[k];
                 for(int i=0; i<k; i++) temp[i]= new double[row];
@@ -57,18 +54,12 @@ void multiplicative_update(double **mat, double **mat1, double **mat2, int row, 
 //                print_matrix(temp5, k, col);
 //                print_matrix(mat1, row, k);
 
-                new_err= error(mat , mat1, temp5, row, k, col);
-//                cout<<"New error: "<<new_err<<endl;
+                err= error(mat , mat1, temp5, row, k, col);
+//                cout<<"Error: "<<err<<endl;
 
-                if(fabs(old_err-new_err)<epsilon_Err_Check) break;
-                else if(old_err==new_err) break;
 
                 copy_matrix(mat2, temp5, k, col);
 //                cout<<"Matrix is copied"<<endl;
-
-                old_err= new_err;
-
-//                if(isnan(new_err)) break;
 
                 delete[] temp;
                 delete[] temp1;
@@ -77,7 +68,7 @@ void multiplicative_update(double **mat, double **mat1, double **mat2, int row, 
                 delete[] temp4;
                 delete[] temp5;
 
-                cout<<"----------------Changed mat-2----------------error: "<<new_err<<endl;
+//                cout<<"----------------Changed mat-2----------------error: "<<err<<endl;
 
 //                                cout<<"Matrix-1:"<<endl;
 //                print_matrix(mat1, row, k);
@@ -118,15 +109,9 @@ void multiplicative_update(double **mat, double **mat1, double **mat2, int row, 
                 elementwise_multiply_matrix(mat1, temp4, temp5, row, k);
 
 
-                new_err= error(mat , temp5, mat2, row, k, col);
-
-                if(fabs(old_err-new_err)<epsilon_Err_Check) break;
-                else if(old_err==new_err) break;
+                err= error(mat , temp5, mat2, row, k, col);
 
                 copy_matrix(mat1, temp5, row, k);
-
-                old_err=new_err;
-//                if(isnan(new_err)) break;
 
                 delete[] temp;
                 delete[] temp1;
@@ -135,7 +120,7 @@ void multiplicative_update(double **mat, double **mat1, double **mat2, int row, 
                 delete[] temp4;
                 delete[] temp5;
 
-                cout<<"----------------Changed mat-2----------------error: "<<new_err<<endl;
+                cout<<"----------------Changed mat-1----------------error: "<<err<<endl;
 
 //                cout<<"Factorized matrices: "<<endl<<endl;
 //
@@ -167,5 +152,5 @@ void multiplicative_update(double **mat, double **mat1, double **mat2, int row, 
     cout<<endl;
 
 //    cout<<"Total iterations: "<<cnt<<" "<<endl;
-//    cout<<"Error: "<<(err*100)<<"%"<<endl;
+    cout<<"Error: "<<err<<endl;
 }
