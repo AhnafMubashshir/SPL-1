@@ -6,7 +6,8 @@ int main()
     int opt;
 
     while(1){
-        cout<<"Options: "<<endl;
+        cout<<"--------------------------------------------------Matrix Operations--------------------------------------------------"<<endl<<endl;
+        cout<<"Options: (Type 'exit' anywhere in the programe to terminate & 'back' for previous window.)"<<endl;
         cout<<"Press '1' for Matrix Addition"<<endl;
         cout<<"Press '2' for Matrix Subtraction."<<endl;
         cout<<"Press '3' for Matrix Multiplication."<<endl;

@@ -274,7 +274,7 @@
 1653684352 source:d:\spl\spl-1\actions\matrix_addition.cpp
 	"header.h"
 
-1653684352 d:\spl\spl-1\headers\header.h
+1653729968 d:\spl\spl-1\headers\header.h
 	<bits/stdc++.h>
 	<algorithm>
 	"constants.h"
@@ -285,7 +285,7 @@
 1653681205 source:d:\spl\spl-1\actions\matrix_factorization.cpp
 	"header.h"
 
-1653684352 source:d:\spl\spl-1\actions\matrix_multiplication.cpp
+1653729968 source:d:\spl\spl-1\actions\matrix_multiplication.cpp
 	"header.h"
 
 1653683035 source:d:\spl\spl-1\actions\matrix_subtraction.cpp
@@ -349,7 +349,7 @@
 1653669064 source:d:\spl\spl-1\lib\transpose_matrix.cpp
 	"header.h"
 
-1653681570 source:d:\spl\spl-1\main.cpp
+1653730066 source:d:\spl\spl-1\main.cpp
 	"header.h"
 
 1653683035 source:d:\spl\spl-1\actions\determinant.cpp
@@ -358,7 +358,7 @@
 1653683035 source:d:\spl\spl-1\actions\inverse_matrix.cpp
 	"header.h"
 
-1653500951 source:d:\spl\spl-1\actions\solve_linear_equation.cpp
+1653684361 source:d:\spl\spl-1\actions\solve_linear_equation.cpp
 	"header.h"
 
 1653669064 source:d:\spl\spl-1\lib\gauss_seidel.cpp
@@ -371,5 +371,8 @@
 	"header.h"
 
 1653669064 source:d:\spl\spl-1\lib\multiplicative_update_for_high_colrow.cpp
+	"header.h"
+
+1653729442 source:d:\spl\spl-1\actions\multiplication_of_chain_matrix.cpp
 	"header.h"
 
