@@ -3,7 +3,7 @@
 int Matrix_Multiplication()
 {
     cout<<"#Multiplication of Chain Matrix"<<endl<<endl;
-    int Hrow, Hcol, row1, col1, row2, col2, tot;
+    int Hrow, Hcol, row1, col1, row2, col2, tot, range;
     string str, choice;
 
     cout<<"Enter number of matrices you want to multiply: ";
@@ -38,8 +38,8 @@ int Matrix_Multiplication()
     for(int i=0; i<Hrow; i++) result[i]= new double[Hcol];
 
 
+    //first mat dimension input
     while(1){
-        //first mat dimension input
         cout<<"Enter 1st matrix row & column: ";
         cin>>str;
         if(str=="exit") return 0;
@@ -71,32 +71,115 @@ int Matrix_Multiplication()
         break;
     }
 
-    //Taking 1st matrix input
-    cout<<"Enter 1st matrix: "<<endl;
-    for(int i=0; i<row1; i++){
-        for(int j=0; j<col1; j++){
+    //Mat-1 input
+    cout<<"How you want your matrix-1 input?"<<endl;
+    cout<<"Press '1' for user input."<<endl;
+    cout<<"Press '2' for random input."<<endl<<endl;
+    cout<<"Choose an option: ";
+
+    while(1){
+        cin>>str;
+
+        if(str=="1"){
+
+            cout<<endl<<"Enter matrix-1: "<<endl;
+            for(int i=0;i<row1;i++){
+                for(int j=0;j<col1;j++){
+                    cin>>str;
+                    if(str=="exit") return 0;
+                    else if(str=="back") return 1;
+                    matrix1[i][j]=stoi(str);
+                }
+            }
+            cout<<endl;
+
+            break;
+        }
+        else if(str=="2"){
+
+            cout<<endl<<"Enter the last range of your input: ";
             cin>>str;
             if(str=="exit") return 0;
             else if(str=="back") return 1;
-            matrix1[i][j]=stoi(str);
+            range= stoi(str);
+            cout<<endl;
+
+            for(int i=0; i<row1; i++){
+                for(int j=0; j<col1; j++){
+                    double input= rand()%range;
+                    matrix1[i][j]= abs(input);
+                }
+            }
+            cout<<"The Matrix-1 is:"<<endl;
+            print_matrix(matrix1, row1, col1);
+
+            break;
         }
+        else if(str=="back") return 1;
+        else if(str=="exit") return 0;
+        else{
+            cout<<"Wrong choice! Please try again: ";
+            continue;
+        }
+        break;
     }
-    cout<<endl;
 
 
+    //Mat-2 input
+    cout<<"How you want your matrix-2 input?"<<endl;
+    cout<<"Press '1' for user input."<<endl;
+    cout<<"Press '2' for random input."<<endl<<endl;
+    cout<<"Choose an option: ";
 
-    //Takin 2nd matrix input
-    cout<<"Enter 2nd matrix: "<<endl;
-    for(int i=0;i<row2;i++){
-        for(int j=0;j<col2;j++){
+    while(1){
+        cin>>str;
+
+        if(str=="1"){
+
+            cout<<endl<<"Enter matrix-1: "<<endl;
+            for(int i=0;i<row2;i++){
+                for(int j=0;j<col2;j++){
+                    cin>>str;
+                    if(str=="exit") return 0;
+                    else if(str=="back") return 1;
+                    matrix2[i][j]=stoi(str);
+                }
+            }
+            cout<<endl;
+
+            break;
+        }
+        else if(str=="2"){
+
+            cout<<endl<<"Enter the last range of your input: ";
             cin>>str;
             if(str=="exit") return 0;
             else if(str=="back") return 1;
-            matrix2[i][j]=stoi(str);
-        }
-    }
-    cout<<endl;
+            range= stoi(str);
+            cout<<endl;
 
+            for(int i=0; i<row2; i++){
+                for(int j=0; j<col2; j++){
+                    double input= rand()%range;
+                    matrix2[i][j]= abs(input);
+                }
+            }
+            cout<<"The Matrix-2 is:"<<endl;
+            print_matrix(matrix2, row2, col2);
+
+            break;
+        }
+        else if(str=="back") return 1;
+        else if(str=="exit") return 0;
+        else{
+            cout<<"Wrong choice! Please try again: ";
+            continue;
+        }
+        break;
+    }
+
+
+    //Multiplying the matrices
     multiply_matrix(matrix1, matrix2, result, row1, col1, col2);
 
     tot-=2;
@@ -128,6 +211,9 @@ int Matrix_Multiplication()
 
         cout<<"The dimension of result matrix is: "<<row1<<"x"<<col2<<endl<<endl;
 
+
+
+        //Mat-1 input
         if(choice=="F" || choice=="f"){
             row2=row1;
             copy_matrix(matrix2, result, row2, col2);
@@ -153,20 +239,63 @@ int Matrix_Multiplication()
                 break;
             }
 
-            //Taking 1st matrix input
-            cout<<"Enter 1st matrix: "<<endl;
-            for(int i=0; i<row1; i++){
-                for(int j=0; j<col1; j++){
+            //Mat-1 input
+            cout<<"How you want your matrix-1 input?"<<endl;
+            cout<<"Press '1' for user input."<<endl;
+            cout<<"Press '2' for random input."<<endl<<endl;
+            cout<<"Choose an option: ";
+
+            while(1){
+                cin>>str;
+
+                if(str=="1"){
+
+                    cout<<endl<<"Enter matrix-1: "<<endl;
+                    for(int i=0;i<row1;i++){
+                        for(int j=0;j<col1;j++){
+                            cin>>str;
+                            if(str=="exit") return 0;
+                            else if(str=="back") return 1;
+                            matrix1[i][j]=stoi(str);
+                        }
+                    }
+                    cout<<endl;
+
+                    break;
+                }
+                else if(str=="2"){
+
+                    cout<<endl<<"Enter the last range of your input: ";
                     cin>>str;
                     if(str=="exit") return 0;
                     else if(str=="back") return 1;
-                    matrix1[i][j]=stoi(str);
-                }
-            }
-            cout<<endl;
+                    range= stoi(str);
+                    cout<<endl;
 
+                    for(int i=0; i<row1; i++){
+                        for(int j=0; j<col1; j++){
+                            double input= rand()%range;
+                            matrix1[i][j]= abs(input);
+                        }
+                    }
+                    cout<<"The Matrix is:"<<endl;
+                    print_matrix(matrix1, row1, col1);
+
+                    break;
+                }
+                else if(str=="back") return 1;
+                else if(str=="exit") return 0;
+                else{
+                    cout<<"Wrong choice! Please try again: ";
+                    continue;
+                }
+                break;
+            }
+
+            //Multiplying matrices
             multiply_matrix(matrix1, matrix2, result, row1, col1, col2);
         }
+        //Mat-2 input
         else{
             col1=col2;
 
@@ -194,18 +323,60 @@ int Matrix_Multiplication()
             }
 
 
-            //Taking 1st matrix input
-            cout<<"Enter 2nd matrix: "<<endl;
-            for(int i=0; i<row2; i++){
-                for(int j=0; j<col2; j++){
+            //Mat-2 input
+            cout<<"How you want your matrix-2 input?"<<endl;
+            cout<<"Press '1' for user input."<<endl;
+            cout<<"Press '2' for random input."<<endl<<endl;
+            cout<<"Choose an option: ";
+
+            while(1){
+                cin>>str;
+
+                if(str=="1"){
+
+                    cout<<endl<<"Enter matrix-1: "<<endl;
+                    for(int i=0;i<row2;i++){
+                        for(int j=0;j<col2;j++){
+                            cin>>str;
+                            if(str=="exit") return 0;
+                            else if(str=="back") return 1;
+                            matrix2[i][j]=stoi(str);
+                        }
+                    }
+                    cout<<endl;
+
+                    break;
+                }
+                else if(str=="2"){
+
+                    cout<<endl<<"Enter the last range of your input: ";
                     cin>>str;
                     if(str=="exit") return 0;
                     else if(str=="back") return 1;
-                    matrix2[i][j]=stoi(str);
-                }
-            }
-            cout<<endl;
+                    range= stoi(str);
+                    cout<<endl;
 
+                    for(int i=0; i<row2; i++){
+                        for(int j=0; j<col2; j++){
+                            double input= rand()%range;
+                            matrix2[i][j]= abs(input);
+                        }
+                    }
+                    cout<<"The Matrix is:"<<endl;
+                    print_matrix(matrix2, row2, col2);
+
+                    break;
+                }
+                else if(str=="back") return 1;
+                else if(str=="exit") return 0;
+                else{
+                    cout<<"Wrong choice! Please try again: ";
+                    continue;
+                }
+                break;
+            }
+
+            //Multiplyingmatrices
             multiply_matrix(matrix1, matrix2, result, row1, col1, col2);
         }
     }

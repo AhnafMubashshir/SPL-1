@@ -3,7 +3,7 @@
 int Determinant()
 {
     cout<<"#Determinant"<<endl<<endl;
-    int row, col;
+    int row, col, range;
     string str;
 
     //dimension input
@@ -23,16 +23,56 @@ int Determinant()
     double** matrix=new double*[row];
     for(int i=0; i<row; i++) matrix[i]= new double[col];
 
-    cout<<"Enter matrix: "<<endl;
-    for(int i=0; i<row; i++){
-        for(int j=0; j<col; j++){
+    cout<<"How you want your input?"<<endl;
+    cout<<"Press '1' for user input."<<endl;
+    cout<<"Press '2' for random input."<<endl<<endl;
+    cout<<"Choose an option: ";
+
+    while(1){
+        cin>>str;
+
+        if(str=="1"){
+
+            cout<<endl<<"Enter the matrix: "<<endl;
+            for(int i=0;i<row;i++){
+                for(int j=0;j<col;j++){
+                    cin>>str;
+                    if(str=="exit") return 0;
+                    else if(str=="back") return 1;
+                    matrix[i][j]=stoi(str);
+                }
+            }
+            cout<<endl;
+
+            break;
+        }
+        else if(str=="2"){
+
+            cout<<endl<<"Enter the last range of your input: ";
             cin>>str;
             if(str=="exit") return 0;
             else if(str=="back") return 1;
-            matrix[i][j]=stoi(str);
+            range= stoi(str);
+            cout<<endl;
+
+            for(int i=0; i<row; i++){
+                for(int j=0; j<col; j++){
+                    double input= rand()%range;
+                    matrix[i][j]= abs(input);
+                }
+            }
+            cout<<"The Matrix is:"<<endl;
+            print_matrix(matrix, row, col);
+
+            break;
+        }
+        else if(str=="back") return 1;
+        else if(str=="exit") return 0;
+        else{
+            cout<<"Wrong choice! Please try again: ";
+            continue;
         }
     }
-    cout<<endl;
 
     double det;
     det= determenent(matrix, row, col);

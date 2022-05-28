@@ -3,12 +3,24 @@
 void gauss_seidel(double **co_efficient_mat, double *right_hand_side_mat, int variables)
 {
 
+    //Checking diagonally dominent
+    double sum;
+    for(int i=0; i<variables; i++){
+        sum=0;
+        for(int j=0; j<variables; j++){
+            if(i!=j) sum+=co_efficient_mat[i][j];
+        }
+        if(co_efficient_mat[i][i]<=sum){
+            cout<<"Co-Efficient Matrix is not diagonally dominant. Can't find answer."<<endl<<endl;
+            return;
+        }
+    }
+
     double* old_val=new double[variables];
     double* new_val=new double[variables];
 
 
-
-    double sum, old_err=100, new_err=0;
+    double old_err=100, new_err=0;
 
 	int flag, cnt=0;
 

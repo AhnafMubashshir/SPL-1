@@ -4,7 +4,7 @@ int Matrix_Factorization()
 {
     cout<<"#Matrix Factorization"<<endl<<endl;
 
-    int row,col,colrow,i,j;
+    int row,col,colrow;
     int range;
     string str;
 
@@ -42,8 +42,13 @@ int Matrix_Factorization()
         if(str=="1"){
 
             cout<<endl<<"Enter the matrix: "<<endl;
-            for(i=0;i<row;i++){
-                for(j=0;j<col;j++) cin>>matrix[i][j];
+            for(int i=0;i<row;i++){
+                for(int j=0;j<col;j++){
+                    cin>>str;
+                    if(str=="exit") return 0;
+                    else if(str=="back") return 1;
+                    matrix[i][j]=stoi(str);
+                }
             }
             cout<<endl;
 
@@ -64,6 +69,7 @@ int Matrix_Factorization()
                     matrix[i][j]= abs(input);
                 }
             }
+
             break;
         }
         else if(str=="back") return 1;

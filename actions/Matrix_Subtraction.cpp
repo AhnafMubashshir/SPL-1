@@ -4,7 +4,7 @@ int Matrix_Subtraction()
 {
     cout<<"#Matrix Subtraction"<<endl<<endl;
 
-    int row, col;
+    int row, col, range;
     string str;
 
     //dimension input
@@ -24,33 +24,113 @@ int Matrix_Subtraction()
     double** matrix1=new double*[row];
     for(int i=0; i<row; i++) matrix1[i]= new double[col];
 
-    cout<<"Enter 1st matrix: "<<endl;
-    for(int i=0; i<row; i++){
-        for(int j=0; j<col; j++){
+     cout<<"How you want your matrix-1 input?"<<endl;
+    cout<<"Press '1' for user input."<<endl;
+    cout<<"Press '2' for random input."<<endl<<endl;
+    cout<<"Choose an option: ";
+
+    while(1){
+        cin>>str;
+
+        if(str=="1"){
+
+            cout<<endl<<"Enter matrix-1: "<<endl;
+            for(int i=0;i<row;i++){
+                for(int j=0;j<col;j++){
+                    cin>>str;
+                    if(str=="exit") return 0;
+                    else if(str=="back") return 1;
+                    matrix1[i][j]=stoi(str);
+                }
+            }
+            cout<<endl;
+
+            break;
+        }
+        else if(str=="2"){
+
+            cout<<endl<<"Enter the last range of your input: ";
             cin>>str;
             if(str=="exit") return 0;
             else if(str=="back") return 1;
-            matrix1[i][j]=stoi(str);
+            range= stoi(str);
+            cout<<endl;
+
+            for(int i=0; i<row; i++){
+                for(int j=0; j<col; j++){
+                    double input= rand()%range;
+                    matrix1[i][j]= abs(input);
+                }
+            }
+            cout<<"The Matrix-1 is:"<<endl;
+            print_matrix(matrix1, row, col);
+
+            break;
         }
+        else if(str=="back") return 1;
+        else if(str=="exit") return 0;
+        else{
+            cout<<"Wrong choice! Please try again: ";
+            continue;
+        }
+        break;
     }
-    cout<<endl;
 
 
+    cout<<"How you want your matrix-2 input?"<<endl;
+    cout<<"Press '1' for user input."<<endl;
+    cout<<"Press '2' for random input."<<endl<<endl;
+    cout<<"Choose an option: ";
 
     //Takin 2nd matrix input
     double** matrix2=new double*[row];
     for(int i=0; i<row; i++) matrix2[i]= new double[col];
 
-    cout<<"Enter 2nd matrix: "<<endl;
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
+    while(1){
+        cin>>str;
+
+        if(str=="1"){
+
+            cout<<endl<<"Enter matrix-2: "<<endl;
+            for(int i=0;i<row;i++){
+                for(int j=0;j<col;j++){
+                    cin>>str;
+                    if(str=="exit") return 0;
+                    else if(str=="back") return 1;
+                    matrix2[i][j]=stoi(str);
+                }
+            }
+            cout<<endl;
+
+            break;
+        }
+        else if(str=="2"){
+
+            cout<<endl<<"Enter the last range of your input: ";
             cin>>str;
             if(str=="exit") return 0;
             else if(str=="back") return 1;
-            matrix2[i][j]=stoi(str);
+            range= stoi(str);
+            cout<<endl;
+
+            for(int i=0; i<row; i++){
+                for(int j=0; j<col; j++){
+                    double input= rand()%range;
+                    matrix2[i][j]= abs(input);
+                }
+            }
+            cout<<"The Matrix-2 is:"<<endl;
+            print_matrix(matrix2, row, col);
+
+            break;
+        }
+        else if(str=="back") return 1;
+        else if(str=="exit") return 0;
+        else{
+            cout<<"Wrong choice! Please try again: ";
+            continue;
         }
     }
-    cout<<endl;
 
 
     double** result=new double*[row];
