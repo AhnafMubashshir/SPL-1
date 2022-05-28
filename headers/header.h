@@ -52,6 +52,8 @@ void print_matrix(double **mat, int row, int col);
 
 double random_number();
 
+double randfrom(double minn, double maxx);
+
 double sd(double **mat, int r, int c);
 
 void sub_matrix_initializer(double **mat, double **sub_mat, int r, int c, int r1, int c1);

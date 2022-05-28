@@ -7,6 +7,7 @@ int Matrix_Factorization()
     int row,col,colrow;
     int range;
     string str;
+//    double minn= INFINITE;
 
     //dimension input
     cout<<"Enter row & column of the matrix: ";
@@ -65,7 +66,7 @@ int Matrix_Factorization()
 
             for(int i=0; i<row; i++){
                 for(int j=0; j<col; j++){
-                    double input= rand()%range;
+                    double input= randfrom(1, range);
                     matrix[i][j]= abs(input);
                 }
             }
@@ -89,6 +90,28 @@ int Matrix_Factorization()
 
     //normalizing initial matrix
     matrix_normalizer(matrix, row, col);
+
+
+
+
+
+
+
+
+//    for(int i=0; i<row; i++){
+//        for(int j=0; j<col; j++){
+//            if(matrix[i][j]<minn) minn= matrix[i][j];
+//        }
+//    }
+//    cout<<"Minimum value of the matrix is: "<<minn<<endl<<endl;
+//
+//
+//
+
+
+
+
+
 
     //initializing first factorized matrix with gaussian distribution
     cout<<"How you want the initialization of the factorized matrices?"<<endl;
