@@ -28,8 +28,6 @@ void elementwise_multiply_matrix(double **mat1, double **mat2, double **el_mul_m
 
 double error(double **mat, double **mat1, double **mat2, int r1, int c, int c2);
 
-void factorize_matrix();
-
 void gauss_seidel(double **co_efficient_mat, double *right_hand_side_mat, int variables);
 
 void gaussian_initializer(double **mat, int row, int col);
