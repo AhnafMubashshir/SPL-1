@@ -13,19 +13,17 @@ int Matrix_Multiplication()
     tot= stoi(str);
     cout<<endl;
 
-    if(tot>2){
-        //dimension input
-        cout<<"Enter the highest row and column in your chained matrix: ";
-        cin>>str;
-        if(str=="exit") return 0;
-        else if(str=="back") return 1;
-        Hrow= stoi(str);
-        cin>>str;
-        if(str=="exit") return 0;
-        else if(str=="back") return 1;
-        Hcol= stoi(str);
-        cout<<endl;
-    }
+    //dimension input
+    cout<<"Enter the highest row and column in your chained matrix: ";
+    cin>>str;
+    if(str=="exit") return 0;
+    else if(str=="back") return 1;
+    Hrow= stoi(str);
+    cin>>str;
+    if(str=="exit") return 0;
+    else if(str=="back") return 1;
+    Hcol= stoi(str);
+    cout<<endl;
 
 
     double** matrix1=new double*[Hrow];
@@ -70,6 +68,7 @@ int Matrix_Multiplication()
 
         break;
     }
+
 
     //Mat-1 input
     cout<<"How you want your matrix-1 input?"<<endl;
@@ -136,7 +135,7 @@ int Matrix_Multiplication()
 
         if(str=="1"){
 
-            cout<<endl<<"Enter matrix-1: "<<endl;
+            cout<<endl<<"Enter matrix-2: "<<endl;
             for(int i=0;i<row2;i++){
                 for(int j=0;j<col2;j++){
                     cin>>str;
@@ -177,7 +176,6 @@ int Matrix_Multiplication()
         }
         break;
     }
-
 
     //Multiplying the matrices
     multiply_matrix(matrix1, matrix2, result, row1, col1, col2);

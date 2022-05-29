@@ -73,7 +73,7 @@ void multiplicative_update_for_low_colrow(double **mat, double **mat1, double **
                 delete[] temp4;
                 delete[] temp5;
 
-                cout<<"----------------Changed mat-2----------------error: "<<new_err<<endl;
+//                cout<<"----------------Changed mat-2----------------error: "<<new_err<<endl;
 
 //                cout<<"Matrix-1:"<<endl;
 //                print_matrix(mat1, row, k);
@@ -130,7 +130,7 @@ void multiplicative_update_for_low_colrow(double **mat, double **mat1, double **
                 delete[] temp4;
                 delete[] temp5;
 
-                cout<<"----------------Changed mat-1----------------error: "<<new_err<<endl;
+//                cout<<"----------------Changed mat-1----------------error: "<<new_err<<endl;
 
 //                cout<<"Factorized matrices: "<<endl<<endl;
 //
